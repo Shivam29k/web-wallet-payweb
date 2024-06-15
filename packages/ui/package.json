@@ -10,7 +10,8 @@
     "./input": "./src/input.tsx",
     "./appbar": "./src/appbar.tsx",
     "./page": "./src/page.tsx",
-    "./customAlert": "./src/customAlert.ts"
+    "./customAlert": "./src/customAlert.ts",
+    "./icons": "./src/icons.tsx"
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",

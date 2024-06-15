@@ -1,7 +1,6 @@
 
 import { Button } from "./button";
 
-
 interface AppbarProps {
     user?: {
         name?: string | null;
@@ -11,8 +10,8 @@ interface AppbarProps {
 }
 
 export const Appbar = ({user, onSignin, onSignout}: AppbarProps) =>{
-    return <div className="flex justify-between border-b h-[7vh] px-4 w-full bg-slate-100 ">
-    <div className="text-lg font-bold flex flex-col justify-center">
+    return <div className="flex justify-between border-b min-h-[7vh] px-4 w-full bg-slate-100 ">
+    <div className="text-lg font-bold flex flex-col justify-center cursor-pointer">
         PayTM
     </div>
     <div className="flex items-center">

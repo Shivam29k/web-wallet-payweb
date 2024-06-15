@@ -6,11 +6,11 @@ import { useRouter } from "next/navigation"
 
 
 
-export function AppbarClient(){
+export function AppbarClientMobile(){
     const session = useSession()
     const router = useRouter()
 
-    return <div className="fixed w-full top-0 left-0 overflow-hidden z-10">
+    return <div className="fixed w-full  top-0 left-0">
         <Appbar 
             onSignin={signIn} 
             onSignout={async ()=>{

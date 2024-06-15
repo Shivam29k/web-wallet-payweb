@@ -3,8 +3,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Provider } from "./provider";
 import { AppbarClient } from "./components/AppbarClient";
-import { getServerSession } from "next-auth";
-import { redirect } from "next/navigation";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,19 +17,18 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-
-
-  const session  = await getServerSession();
-  if(!session?.user){
-    redirect("/api/auth/signin")
-  }
-
+  // const session  = await getServerSession();
+  // if(!session?.user){
+  //   redirect("/home")
+  // }
   return (
     <html lang="en">
       <Provider>
         <body className={inter.className}>
           <AppbarClient />
+          <div className="mt-[7vh]">
           {children}
+          </div>
         </body>
       </Provider>
     </html>
