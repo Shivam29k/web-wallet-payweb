@@ -11,7 +11,8 @@
     "./appbar": "./src/appbar.tsx",
     "./page": "./src/page.tsx",
     "./customAlert": "./src/customAlert.ts",
-    "./icons": "./src/icons.tsx"
+    "./icons": "./src/icons.tsx",
+    "./Graph": "./src/Graph.tsx"
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",

@@ -30,7 +30,7 @@ export default function hdfcBankPage() {
             window.close();
         }
     }
-    return <div className="bg-gradient-to-b from-sky-300 to-sky-50 h-[93vh]">
+    return <div className="bg-gradient-to-b from-sky-300 to-sky-50 h-[93vh] mt-[7vh]">
         <div className=" flex items-center justify-center flex-col">
             <h1 className="text-3xl p-4 pt-12 font-bold">
                     {data.bankName}

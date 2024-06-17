@@ -8,16 +8,22 @@ export async function approveOnRampTxn(amount: number, token: string, userId: nu
     try {
         await db.$transaction([
           // increment balance
-          db.balance.update({
+          db.balance.upsert({
             where: {
               userId: Number(userId),
             },
-            data: {
+            update: {
               amount: {
-                increment: Number(amount)*100,
+                increment: Number(amount) * 100,
               },
             },
+            create: {
+              userId: Number(userId),
+              amount: Number(amount) * 100,
+              locked: 0,
+            }
           }),
+
           // update txn status
           db.onRampTransaction.update({
             where: {
@@ -29,6 +35,7 @@ export async function approveOnRampTxn(amount: number, token: string, userId: nu
             },
           }),
         ]);
+        
     } catch (e) {
         console.error(e);
         return {

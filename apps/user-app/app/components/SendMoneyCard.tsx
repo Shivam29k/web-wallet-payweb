@@ -1,5 +1,4 @@
 "use client"
-
 import { Button } from "@repo/ui/button";
 import { Card } from "@repo/ui/card";
 import Input from "@repo/ui/input";
@@ -8,7 +7,7 @@ import { p2pTransfer } from "../lib/actions/p2ptxns";
 import { customAlert } from "@repo/ui/customAlert";
 
 
-export default async function SendMoneyCard() {
+export default function SendMoneyCard() {
     const [email, setEmail] = useState("");
     const [amount, setAmount] = useState(0);
 
