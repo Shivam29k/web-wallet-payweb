@@ -2,6 +2,7 @@
 import 
 { Button } from "@repo/ui/button";
 import { approveOnRampTxn } from "../lib/actions/approveOnRampTxns";
+import { useEffect, useState } from "react";
 
 // expoand window object to get the data passed from the parent window
 declare global {
@@ -16,7 +17,15 @@ declare global {
 }
 
 export default function hdfcBankPage() {
-    const data = window.myData;
+    const [data, setData] = useState({
+        amount: 0,
+        token: "",
+        user_identifier: 0,
+        bankName: ""
+    });
+    useEffect(()=>{
+        setData(window.myData);
+    })
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         if(data){

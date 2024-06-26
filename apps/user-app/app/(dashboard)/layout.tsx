@@ -1,4 +1,3 @@
-import { SidebarItem, BottomBarItem } from "../components/BarItems";
 import { getServerSession } from "next-auth";
 import { redirect } from "next/navigation";
 import { SideBar } from "../components/Sidebar";

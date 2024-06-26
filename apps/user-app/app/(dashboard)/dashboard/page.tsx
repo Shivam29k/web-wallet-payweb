@@ -4,7 +4,6 @@ import BalanceCard from "../../components/BalanceCard";
 import { getbalance } from "../../lib/actions/getBalance";
 import { getProfileDetails } from "../../lib/actions/getProfileDetails";
 import { Card } from "@repo/ui/card";
-import { Button } from "@repo/ui/button";
 import { ProfileCard } from "../../components/ProfileCard";
 
 export default async function Dasboard(){
