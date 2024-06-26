@@ -12,7 +12,9 @@
     "./page": "./src/page.tsx",
     "./customAlert": "./src/customAlert.ts",
     "./icons": "./src/icons.tsx",
-    "./Graph": "./src/Graph.tsx"
+    "./Graph": "./src/Graph.tsx",
+    "./IPhone": "./src/IPhone.tsx",
+    "./hero-parallax.tsx": "./src/hero-parallax.tsx"
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",
@@ -31,6 +33,9 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
-    "sweetalert2": "^11.11.1"
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.2.10",
+    "sweetalert2": "^11.11.1",
+    "tailwind-merge": "^2.3.0"
   }
 }

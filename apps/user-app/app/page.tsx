@@ -1,16 +1,25 @@
-import { getServerSession } from "next-auth";
-import { redirect } from "next/navigation";
-import HomePage from "./components/HomePage";
+"use client"
 
-export default async function Page() {
+import CardsLandingPage from "./components/Landing Page/CardsLandingPage";
+import {TilesBg} from "./components/Landing Page/tile";
+import { NavLandingPage } from "./components/Landing Page/NavLandingPage";
+import LandingPageTitle from "./components/Landing Page/LandingPageTitle";
 
-  const session  = await getServerSession();
-  if(session?.user){
-    redirect("/dashboard")
-  }
+export default function Page() {
   return (
-   <div>
-    <HomePage/>
-   </div>
+    <>
+      <main>
+        <div className="w-full relative">
+          <NavLandingPage />
+          <TilesBg />
+          <LandingPageTitle />
+        </div>
+        <CardsLandingPage />
+        <div className="h-[100vh]">
+
+        </div>
+      </main>
+    </>
   );
 }
+

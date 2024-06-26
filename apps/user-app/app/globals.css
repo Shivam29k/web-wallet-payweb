@@ -19,3 +19,8 @@
     background: #97a0a8;
     border-radius: 10px;
   }
+
+  .circular-mask {
+    -webkit-mask-image: radial-gradient(circle, #f5f5f5 50%, transparent 100%);
+    mask-image: radial-gradient(circle, #f5f5f5 50%, transparent 100%);
+  }

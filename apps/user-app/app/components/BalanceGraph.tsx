@@ -106,13 +106,13 @@ export function BalanceGraph() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
       <div className="">
-        <Card title="Balance History" className="h-96 py-8">
+        <Card title="Balance History" className="max-h-96 py-8">
             <Line data={balanceData} options={options("Balance history","Date", "Amount")} 
             />
         </Card>
       </div>
       <div className="">
-        <Card title="Transaction History" className="h-96 py-8">
+        <Card title="Transaction History" className="max-h-96 py-8">
             <Bar data={txnsData} options={options("Transactions","Date", "Amount")} 
             />
         </Card>
