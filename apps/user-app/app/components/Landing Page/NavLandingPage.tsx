@@ -19,7 +19,7 @@ export function NavLandingPage() {
     return (
       <nav className="top-0 w-full fixed z-20">
         <motion.div
-          className="h-14 w-full flex items-center justify-between px-24"
+          className="h-14 w-full flex items-center justify-between px-[5vw]"
           initial={{ y: -100 }}
           animate={{ y: 0 }}
           transition={{ duration: 0.5, ease: backInOut }}
