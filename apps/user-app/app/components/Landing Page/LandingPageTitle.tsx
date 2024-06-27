@@ -1,8 +1,10 @@
 "use client"
 
 import { motion, backInOut } from "framer-motion";
+import { useSession } from "next-auth/react";
 
 function LandingPageTitle() {
+  const session = useSession();
   return (
     <section className="absolute inset-0 flex flex-col gap-10 justify-center items-center z-10 pointer-events-none">
     <motion.h1
@@ -33,8 +35,15 @@ function LandingPageTitle() {
         stiffness: 300,
         damping: 20,
       }}
+      onClick={()=>{
+        if(!session.data?.user){
+          window.location.href = "/api/auth/signin";
+        }else{
+          window.location.href = "/dashboard";
+        }
+      }}
     >
-      Join now
+      {session.data?.user? "Dashboard" :"Join now"}
     </motion.button>
   </section> 
   )

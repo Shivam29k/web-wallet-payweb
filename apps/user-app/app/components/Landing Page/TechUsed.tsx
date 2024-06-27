@@ -1,3 +1,5 @@
+"use client"
+
 import { TurboRepoIcon } from "@repo/ui/icons";
 import { motion, useInView, useScroll, useSpring } from "framer-motion";
 import { useRef } from "react";

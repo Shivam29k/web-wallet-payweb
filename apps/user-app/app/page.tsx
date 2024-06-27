@@ -1,10 +1,9 @@
-"use client";
-
 import CardsLandingPage from "./components/Landing Page/CardsLandingPage";
 import { TilesBg } from "./components/Landing Page/tile";
 import { NavLandingPage } from "./components/Landing Page/NavLandingPage";
 import LandingPageTitle from "./components/Landing Page/LandingPageTitle";
 import { TechUsed } from "./components/Landing Page/TechUsed";
+import { Fotter } from "./components/Landing Page/Fotter";
 
 
 export default function Page() {
@@ -24,7 +23,8 @@ export default function Page() {
             <TechUsed />
           </div>
           <div className="min-h-[50vh] bg-[#8969ce] ">
-            <CurveSVG className="fill-neutral-100" />            
+            <CurveSVG className="fill-neutral-100" />     
+            <Fotter />       
           </div>
         </section>
       </main>

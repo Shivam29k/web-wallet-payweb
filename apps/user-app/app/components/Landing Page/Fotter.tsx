@@ -5,11 +5,11 @@ export function Fotter(){
     return(
         <footer className="w-full px-[5vw]">
               <div className="grid grid-cols-1 md:grid-cols-2  text-white">
-                <div className="p-8">
-                  <div className="flex gap-4 items-center">
+                <div className="">
+                  <div className="w-full flex gap-4  items-center justify-center py-4">
                     <img
                       className="rounded-full h-32"
-                      src="https://pbs.twimg.com/profile_images/1659899237000413189/cGzb8fOr_400x400.jpg"
+                      src="https://pbs.twImage.com/profile_images/1659899237000413189/cGzb8fOr_400x400.jpg"
                       alt=""
                     />
                     <div className="flex flex-col gap-4">
@@ -25,9 +25,9 @@ export function Fotter(){
                   </div>
                 </div>
 
-                <div className="w-fit">
+                <div className="w-full flex items-center md:items-start flex-col bord md:border-none pt-4 ">
                   <p className="underline font-medium pb-4">Let's Connect</p>
-                  <div className="flex items-center gap-8">
+                  <div className="flex items-center gap-3 md:gap-8">
                   <SocialMedia href="https://github.com/Shivam29k" title="Github">
                     <img
                       className="h-[100%] w-[100%] rounded-full bg-white"
@@ -77,7 +77,7 @@ function SocialMedia({
     return (
       <Link href={href}>
         <div className="flex items-center justify-center flex-col hover:scale-110 transition-all duration-300">
-        <div className="h-16 w-16 hover:shadow-xl rounded-full">
+        <div className="max-h-16 max-w-16 hover:shadow-xl rounded-full">
           {children}
         </div>
         <p className="text-center pt-2">{title}</p>

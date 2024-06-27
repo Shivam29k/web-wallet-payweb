@@ -3,6 +3,7 @@ import { redirect } from "next/navigation";
 import { SideBar } from "../components/Sidebar";
 import { BottomBar } from "../components/Bottombar";
 import { AppbarClient } from "../components/AppbarClient";
+import { NEXT_AUTH_OPTIONS } from "../lib/auth";
 
 export default async function CoponentLayout({
     children,
@@ -10,7 +11,7 @@ export default async function CoponentLayout({
     children: React.ReactNode;
   }) {
 
-    const session = await getServerSession();
+    const session = await getServerSession(NEXT_AUTH_OPTIONS);
     if(!session?.user){
       redirect("/")
     }

@@ -11,8 +11,8 @@ function Tile() {
         backgroundColor: "#8969CE",
       }}
       transition={{
-        duration: 0.8,
-        ease: "easeOut"
+        duration: 1,
+        ease: "easeInOut"
       }}
     />
   );
@@ -21,7 +21,7 @@ function Tile() {
 function TilesBg() {
   return <section className="w-full h-screen grid grid-cols-20 overflow-clip circular-mask">
   {/* Grid background */}
-  {Array.from(Array(20 * 100), i => (
+  {Array.from(Array(20 * 100)).map((_, i) => (
     <Tile key={i} />
   ))}
 </section>

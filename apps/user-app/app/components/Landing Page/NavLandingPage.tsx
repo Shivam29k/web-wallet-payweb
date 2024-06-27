@@ -1,8 +1,12 @@
 "use client"
 
-import { motion, useScroll, useTransform, backInOut } from "framer-motion";
+import { motion, useScroll, useTransform, backInOut, useAnimate } from "framer-motion";
 import Link from "next/link";
 import { WalletIcon } from "@repo/ui/icons";
+import { getServerSession } from "next-auth";
+import { NEXT_AUTH_OPTIONS } from "../../lib/auth";
+import { useSession } from "next-auth/react";
+
 export function NavLandingPage() {
     const { scrollYProgress } = useScroll();  
     // const session  = await getServerSession();
@@ -16,6 +20,9 @@ export function NavLandingPage() {
       [0, 0.1],
       ["#8969CE", "rgba(255, 255, 255, 1)"],
     );
+
+    const session = useSession();
+
     return (
       <nav className="top-0 w-full fixed z-20">
         <motion.div
@@ -34,9 +41,9 @@ export function NavLandingPage() {
               <p className="font-bold text-xl">PayTW</p>
             </div>
           </Link>
-          <Link href="/api/auth/signin">
+          <Link href={session.data?.user? "/dashboard" :"/api/auth/signin"}>
             <div className="flex  gap-2 items-center  hover:cursor-pointer hover:underline decoration-[#8969CE] decoration-4 underline-offset-8">
-              <p className="font-bold text-xl">Login</p>
+              <p className="font-bold text-xl">{session.data?.user? "Dashboard" : "Login"}</p>
             </div>
           </Link>
         </motion.div>

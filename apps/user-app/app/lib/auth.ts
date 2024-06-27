@@ -1,6 +1,5 @@
 import CredentialsProvider from "next-auth/providers/credentials";
 import GoogleProvider from "next-auth/providers/google";
-import GitHubProvider from "next-auth/providers/github";
 import db from "@repo/db/client";
 import bcrypt from "bcrypt";
 import { JWT } from "next-auth/jwt";
