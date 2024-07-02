@@ -1,10 +1,8 @@
 "use client"
 
-import { motion, useScroll, useTransform, backInOut, useAnimate } from "framer-motion";
+import { motion, useScroll, useTransform, backInOut} from "framer-motion";
 import Link from "next/link";
 import { WalletIcon } from "@repo/ui/icons";
-import { getServerSession } from "next-auth";
-import { NEXT_AUTH_OPTIONS } from "../../lib/auth";
 import { useSession } from "next-auth/react";
 
 export function NavLandingPage() {

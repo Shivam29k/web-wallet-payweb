@@ -9,7 +9,7 @@ export function Fotter(){
                   <div className="w-full flex gap-4  items-center justify-center py-4">
                     <img
                       className="rounded-full h-32"
-                      src="https://pbs.twImage.com/profile_images/1659899237000413189/cGzb8fOr_400x400.jpg"
+                      src="pfp_400x400.jpg"
                       alt=""
                     />
                     <div className="flex flex-col gap-4">
