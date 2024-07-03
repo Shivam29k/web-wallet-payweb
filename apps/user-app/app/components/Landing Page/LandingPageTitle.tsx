@@ -22,7 +22,7 @@ function LandingPageTitle() {
       }}
     >
       Join the future of payments with PayTW with a simple and easy to
-      use interface web wallet. I am done with this/
+      use interface web wallet.
     </motion.p>
     <motion.button className="text-neutral-100 rounded-full   text-xl md:text-3xl bg-[#8969CE] py-2 px-8 md:px-10 border  border-indigo-900 pointer-events-auto"
       initial={{ scale: 0 }}

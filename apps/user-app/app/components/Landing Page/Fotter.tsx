@@ -26,7 +26,7 @@ export function Fotter(){
                 </div>
 
                 <div className="w-full flex items-center md:items-start flex-col bord md:border-none pt-4 ">
-                  <p className="underline font-medium pb-4">Let's Connect</p>
+                  <p className="md:underline font-medium pb-4">Let's Connect</p>
                   <div className="flex items-center gap-3 md:gap-8">
                   <SocialMedia href="https://github.com/Shivam29k" title="Github">
                     <img
@@ -57,7 +57,7 @@ export function Fotter(){
                     />
                   </SocialMedia>
                   </div>
-                  <p className="pt-8 border-t mt-8 pl-1">Get the code of this project <a href="" className="underline text-blue-200">Here</a></p>
+                  <p className=" border-t py-4 md:mt-8 pl-1">Get the code of this project <a href="" className="underline text-blue-200">Here</a></p>
                 </div>
               </div>
             </footer>
