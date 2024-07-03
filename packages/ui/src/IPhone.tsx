@@ -12,14 +12,17 @@ function IPhone({ image, navBarColor, className }: IPhoneProps) {
   const [time, setTime] = useState<string>("");
 
   // update the time every minute
-  setInterval(()=>{
-    const time = new Intl.DateTimeFormat("default", {
-      hour: "2-digit",
-      minute: "2-digit",
-      hour12: false,
-    }).format(new Date());
-    setTime(time);
-  })
+  useEffect(()=>{
+    setInterval(()=>{
+      const time = new Intl.DateTimeFormat("default", {
+        hour: "2-digit",
+        minute: "2-digit",
+        hour12: false,
+      }).format(new Date());
+      setTime(time);
+    })
+  }, [])
+  
   return (
     <div className={`h-[70vh] w-72  ${className}`}>
       <div className={`border  h-full w-full rounded-xl bg-zinc-700 p-1`}

@@ -1,6 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter, Poppins } from "next/font/google";
+import { Poppins } from "next/font/google";
 import { Provider } from "./provider";
 
 const poppins_init = Poppins({
@@ -9,8 +9,6 @@ const poppins_init = Poppins({
   variable: '--font-poppins',
 })
 
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Turborepo",

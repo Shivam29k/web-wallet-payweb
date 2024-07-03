@@ -1,3 +1,4 @@
+"use server"
 import CardsLandingPage from "./components/Landing Page/CardsLandingPage";
 import { TilesBg } from "./components/Landing Page/tile";
 import { NavLandingPage } from "./components/Landing Page/NavLandingPage";
@@ -6,7 +7,7 @@ import { TechUsed } from "./components/Landing Page/TechUsed";
 import { Fotter } from "./components/Landing Page/Fotter";
 
 
-export default function Page() {
+export default async function Page() {
   return (
     <>
       <main>

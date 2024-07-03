@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 
 function Tile() {
+
   return (
     <motion.div
       className="aspect-square bg-neutral-100 border border-neutral-200"
@@ -11,8 +12,8 @@ function Tile() {
         backgroundColor: "#8969CE",
       }}
       transition={{
-        duration: 1,
-        ease: "easeInOut"
+        duration: 2,
+        ease: "easeOut"
       }}
     />
   );
