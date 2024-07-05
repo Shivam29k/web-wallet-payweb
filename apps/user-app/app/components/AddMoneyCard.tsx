@@ -18,10 +18,10 @@ declare global {
 
 const SUPPORTED_BANKS = [{
     name: "HDFC Bank",
-    redirectUrl: `${process.env.NEXTAUTH_URL}/fakebankpage`
+    redirectUrl: `https://paytw.shivamk.tech/fakebankpage`
 },{
     name: "ICICI Bank",
-    redirectUrl: `${process.env.NEXTAUTH_URL}/fakebankpage`
+    redirectUrl: `https://paytw.shivamk.tech/fakebankpage`
 }]
 
 
