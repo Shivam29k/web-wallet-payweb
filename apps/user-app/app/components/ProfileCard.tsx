@@ -10,9 +10,11 @@ export function ProfileCard({
 }) {
   return (
     <div className="flex flex-col gap-2 pt-3">
-      <KeyValue label="Username" value={username}  />
+      <KeyValue label="Name" value={username}  />
       <KeyValue label="Email" value={email} showVerified={true} />
-      {/* <KeyValue label="Phone" value={phone} /> */}
+      {
+        phone && <KeyValue label="Phone" value={phone} />
+      }
     </div>
   );
 }

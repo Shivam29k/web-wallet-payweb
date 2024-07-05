@@ -11,6 +11,7 @@ export const NEXT_AUTH_OPTIONS = {
     CredentialsProvider({
       name: "Credentials",
       credentials: {
+        name: { label: "Name", type: "text" },
         email: {
           label: "Email",
           type: "email",
