@@ -61,7 +61,7 @@ export function Fotter() {
           </div>
           <p className="mt-4 border-t py-4 md:mt-8 pl-1 text-sm">
             Get the code of this project{" "}
-            <a href="" className="underline text-blue-200">
+            <a href="https://github.com/Shivam29k/web-wallet-payweb" className="underline text-blue-200">
               Here
             </a>
           </p>
