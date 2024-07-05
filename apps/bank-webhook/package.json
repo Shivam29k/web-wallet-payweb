@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "esbuild ./src/index.ts --bundle --platform=node --outfile=dist/index.js",
-    "dev": "esbuild ./src/index.ts --bundle --platform=node --outfile=dist/index.js && node dist/index.js"
+    "dev": "esbuild ./src/index.ts --bundle --platform=node --outfile=dist/index.js && node dist/index.js",
+    "start": "node dist/index.js"
   },
   "author": "",
   "license": "ISC",
