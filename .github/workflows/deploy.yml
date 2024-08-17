@@ -46,4 +46,3 @@ jobs:
             -e GOOGLE_SECRET=${{ secrets.GOOGLE_SECRET }} \
             -e DATABASE_URL=${{ secrets.DATABASE_URL }} \
             shivamkrandom/paytw:latest
-          sudo docker image prune
